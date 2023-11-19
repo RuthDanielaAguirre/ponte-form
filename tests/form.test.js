@@ -13,6 +13,9 @@ function hexToRgb(hex) {
   const g = (bigint >> 8) & 255;
   const b = bigint & 255;
 
+
+  
+
   // Retorna el valor RGB en formato de cadena
   return `${r}, ${g}, ${b}`;
 }
