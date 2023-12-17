@@ -4,6 +4,8 @@
   position: relative;
   flex-direction: row;
   width: 100%;
+  height: 640px;
+  border-radius: 3.3rem;
 }
 *::before,
 *::after {
@@ -29,9 +31,11 @@ main{
   justify-content: center;
 }
 
-#heading{
+.header{
   color: rgb(0,0,0);
 }
+
+
 
 section{
   display:flex;
@@ -40,6 +44,7 @@ section{
   height: 640px;
   background-color: rgb (f, f, f);
   border-radius: 3.3rem;
+  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
 }
 
 .inner-box{
@@ -49,6 +54,12 @@ section{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.input-wrap{
+  position: relative;
+  height: 37px;
+  margin-bottom: 2rem;
 }
 
 .forms-wrap{
@@ -86,18 +97,33 @@ form {
   margin-right: 0.3rem;
 }
 
-h2{
-  font-size: 1.6rem;
-  color:rgb(0,0,0);
+.heading h2{
+  color: var(--primary-color);
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-top: 3rem;
 }
 
-h3{
-  color:rgb(0,0,0);
+.heading h3{
+  color: var(--quinary-color);
+  font-size: 0.75rem;
+  font-weight: 400;
+  display: inline;
 }
 
-.sign-up-btn{
+a.sign-up-btn{
   color: rgb(0,0,0);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
 }
+
+a.sign-up-btn:hover{
+  color:var(--secondary-color)
+}
+
+
 
 .carousel{
   display: grid;
@@ -114,4 +140,39 @@ h3{
   display: grid;
   max-height: 2.2rem;
   overflow: hidden;
+  margin-bottom: 2.5rem;
 }
+
+
+.text-group{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+
+.text-group h2{
+  display: grid;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+
+.text-slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.text {
+  color: var(--sevenary-color);
+  font-size: 0.7rem;
+}
+
+.text a {
+  color: var(--sevenary-color);
+}
+

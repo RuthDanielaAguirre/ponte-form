@@ -10,51 +10,60 @@
 </head>
 
 <body>
-
-
   <main>
-    <div class="box">
-      <section>
-
-        <div class="inner-box"></div>
-
-        <div class="forms-wrap"></div>
-
-      </section>
-
-      <heading>
-
+    <section class="box">
+      <div class="inner-box">
+      <header class="heading">
         <div class="logo">
-          <img classs="logo img" src="assets/img/logo.png">
+          <img src="assets/img/logo.png">
           <h1>easyclass</h1>
         </div>
+        <div class="welcome">
+          <h2>Welcome Back</h2>
+          <h3>Not registred yet?</h3>
+          <a class="sign-up-btn">Sign up</a>
+        </div>
+      </header>
+      <div class="forms-wrap">
+        <form>
+          <div class="input-wrap">
+            </ul>
+            <input type="text" id="name" placeholder="Name" class="input-field" required minlength="4">
+            <label for="name" id="nameLabel">Name</label>
 
-        <h2>Welcome Back</h2>
-        <h3></h3>
-        <a>Sign up</a>
-      </heading>
+            <input type="password" id="password" placeholder="Password" class="input-field" required>
+            <label for="password" id="passwordLabel">Password</label>
+            <button class="sign-btn">Sign in</button>
+            </ul>
+          </div>
+        </form>
+        <div class="text">
+          <p>Forgotten your password or your login details?</p>
+          <a>Get help signing in</a>
+        </div>
+      </div>
+      </div>
 
-      <form>
-        <label>name</label>
-        <input type = "name" id ="name">
-        <label>password</label>
-        <input type="password" id="password" minlength=4>
-      </form>
+      <aside class="carousel">
+        <div class="images-wrapper">
+          <img class="img-1" src="assets/img/image1.png">
+          <img class="img-2" src="assets/img/image2.png">
+          <img class="img-3" src="assets/img/image3.png">
+        </div>
+        <div class="text-slider">
 
-      <button>Sign in</button>
-    </div>
-
-
-  <aside class="carousel">
-    <div class="images-wrapper">
-      <img  class="img-1"  src =  assets/img/image1.png ">
-      <img class = "img-2" src = "assets/img/image2.png">
-      <img class = "img-3" src = "assets/img/image3.png">
-    </div>
-  </aside>
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Create your own courses</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
 
   </main>
-
 
 </body>
 
